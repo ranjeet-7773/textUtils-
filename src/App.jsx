@@ -46,7 +46,7 @@ function App() {
     }
   }
 
-  const [mode2,setMode2]=useState('light');
+/*  const [mode2,setMode2]=useState('light');
 
   const toggleMode2= ()=>{
     if(mode=='#03351e'){
@@ -65,7 +65,7 @@ function App() {
       document.title="Text Utils- Green Mode"
     }
   }
-
+*/
 
   
   return (
@@ -86,10 +86,10 @@ function App() {
     </div>
   </Router>  */}
 
-<Navbar title='TextUtils' mode={mode} toggleMode={toggleMode} mode2={mode2} toggleMode2={toggleMode2}/>
+<Navbar title='TextUtils' mode={mode} toggleMode={toggleMode} /* mode2={mode2} toggleMode2={toggleMode2}  */ />
       <Alert alert={alert} />  
       <div className='container my-3 '>
-      <TextForm heading="Enter the text to analyze below " mode={mode}/> 
+      <TextForm showAlert={showAlert} heading="Try TextUtils-Word counter,Character counter, Copy text " mode={mode}/> 
       </div>
     </>
   )
